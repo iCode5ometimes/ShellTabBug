@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShellTabBug.MainPage"
+             BackgroundColor="Bisque">
+    
+    <Grid RowDefinitions="*, *"
+          RowSpacing="20"
+          VerticalOptions="Center"
+          HorizontalOptions="Center"
+          BackgroundColor="Bisque">
+        <Label Grid.Row="0"
+               Text="This is the dashboard"
+               TextColor="Black"/>
+        
+        <Button Grid.Row="1"
+                Clicked="Button_OnClicked"
+                Text="Go to DetailView"/>
+    </Grid>
+
+</ContentPage>

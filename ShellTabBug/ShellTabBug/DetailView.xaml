@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShellTabBug.DetailView">
+    
+    <Grid RowDefinitions="*, 68"
+          RowSpacing="0"
+          BackgroundColor="Bisque">
+        <VerticalStackLayout Grid.Row="0"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center">
+            <Label Text="This is the detailView"
+                   TextColor="Black"/>
+        
+            <Button Clicked="Button_OnClicked"
+                    Text="Go to Assistant"/>
+        </VerticalStackLayout>
+        
+        <Grid Grid.Row="1"
+              HorizontalOptions="Fill"
+              VerticalOptions="Fill"
+              BackgroundColor="Blue"/>
+    </Grid>
+</ContentPage>
